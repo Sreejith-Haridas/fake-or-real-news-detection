@@ -6,8 +6,8 @@
 
 import pandas as pd
 
-fake = pd.read_csv("C:\\Users\\sridhish\\Downloads\\archive\\Fake.csv")
-real = pd.read_csv("C:\\Users\\sridhish\\Downloads\\archive\\True.csv")
+fake = pd.read_csv("Fake.csv")
+real = pd.read_csv("True.csv")
 
 
 # In[11]:
@@ -25,10 +25,6 @@ real.head()
 # In[15]:
 
 
-import pandas as pd
-
-fake = pd.read_csv("C:\\Users\\sridhish\\Downloads\\archive\\Fake.csv")
-real = pd.read_csv("C:\\Users\\sridhish\\Downloads\\archive\\True.csv")
 fake["Label"] = 0
 real["Label"] = 1
 df = pd.concat([fake,real])
